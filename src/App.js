@@ -1,3 +1,5 @@
+import "@fontsource/montserrat/400.css";
+import "@fontsource/oswald/500.css";
 import "./App.css";
 
 function App() {
