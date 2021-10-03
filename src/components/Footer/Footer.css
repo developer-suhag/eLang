@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 100px;
+  background: #222f3e;
+  color: #eee;
+}
+.footer p {
+  margin: 0;
+}
+
+.social-icons a svg {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  border: 1px solid #ffd166;
+  color: #f1faee !important;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.social-icons a svg:hover {
+  transform: scale(1.4);
+}

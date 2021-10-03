@@ -33,3 +33,8 @@ a {
 .contained-btn {
   background: #1d3557 !important;
 }
+
+/* colored-text */
+.colored-text {
+  color: #ffd166 !important;
+}
