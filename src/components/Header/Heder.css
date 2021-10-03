@@ -1,0 +1,18 @@
+/* navbar  */
+.nav-menu {
+  background: #f1faee;
+  padding: 5px 0;
+}
+.logo-text {
+  color: #457b9d;
+  font-style: italic;
+}
+.menu-item {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1d3557 !important;
+}
+.selected {
+  color: #457b9d !important;
+  font-weight: 700;
+}

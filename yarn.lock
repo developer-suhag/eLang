@@ -1283,10 +1283,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.1.tgz#64a33ffdb77bbc63484c0321710bed272cc5b16f"
   integrity sha512-xdMkzsnFlzDt5Vj9+AWuUp4Vd9F3hYN2I0GTZZYscWN/bQ20wVOGtdWLO8Okfv7SZ9t/z39/EayAAt+f/8tAvw==
 
-"@fontsource/oswald@^4.5.1":
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/oswald/-/oswald-4.5.1.tgz#48f09df43bc840a05da3654241e95e43d004ff05"
-  integrity sha512-YwHphBXhgVKmwyEkNAqiBrYI+WLrxI9ZOQfGtoZjJHfDC3/SjwACSFeWdk0Sg7EHVcMAC5pppGPhJ7UJO4xo4A==
+"@fontsource/playfair-display@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-4.5.0.tgz#d4bd16664086cc0a65c037e90f14c521c5f8dfad"
+  integrity sha512-c3um+IFEznTocFPFOGJz8zsDReMVkj7Pgp/csEbvNnwqHfr/ZzvLx37m+NolhdqzpFfBFnIQ2fblVoOgQLaOag==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
