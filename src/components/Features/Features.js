@@ -26,7 +26,13 @@ const Features = () => {
           columns={{ xs: 2, sm: 8, md: 12 }}
         >
           {
-            <Grid item xs={2} sm={4} md={4}>
+            <Grid
+              item
+              xs={2}
+              sm={4}
+              md={4}
+              className="animate__animated animate__fadeInLeft"
+            >
               <Card sx={{ maxWidth: 400 }}>
                 <CardActionArea>
                   <CardMedia
@@ -58,7 +64,13 @@ const Features = () => {
             </Grid>
           }
           {
-            <Grid item xs={2} sm={4} md={4}>
+            <Grid
+              item
+              xs={2}
+              sm={4}
+              md={4}
+              className="animate__animated animate__fadeInUp"
+            >
               <Card sx={{ maxWidth: 400 }}>
                 <CardActionArea>
                   <CardMedia
@@ -90,7 +102,13 @@ const Features = () => {
             </Grid>
           }
           {
-            <Grid item xs={2} sm={4} md={4}>
+            <Grid
+              item
+              xs={2}
+              sm={4}
+              md={4}
+              className="animate__animated animate__fadeInRight"
+            >
               <Card sx={{ maxWidth: 400 }}>
                 <CardActionArea>
                   <CardMedia

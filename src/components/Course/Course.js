@@ -35,9 +35,15 @@ const Course = (props) => {
   const handleClick = () => {
     history.push(`/course/${id}`);
   };
+  const handleCartClick = () => {
+    history.push(`/courses`);
+  };
 
   return (
-    <Card sx={{ minWidth: 345, maxWidth: 500, minHeight: 465, boxShadow: 2 }}>
+    <Card
+      sx={{ minWidth: 345, maxWidth: 500, minHeight: 465, boxShadow: 2 }}
+      className="animate__animated animate__slideInUp animate__delay-1s"
+    >
       <CardActionArea>
         <CardMedia
           className="course-thumb"
@@ -103,6 +109,16 @@ const Course = (props) => {
           sx={{ color: "#1d3557", px: 4 }}
         >
           View More
+        </Button>
+        <Button
+          onClick={handleCartClick}
+          size="smalllarge"
+          variant="contained"
+          color="secondary"
+          className="contained-btn"
+          sx={{ px: 4 }}
+        >
+          Add to Cart
         </Button>
       </CardActions>
     </Card>
