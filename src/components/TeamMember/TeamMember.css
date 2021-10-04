@@ -1,0 +1,12 @@
+.instructor {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.instructor img {
+  width: 40%;
+  border-radius: 50%;
+  position: relative;
+}
+.instructor-item .social-icons a svg {
+  color: #1d3557 !important;
+}

@@ -1,9 +1,19 @@
-import { Container, Grid, Paper, Typography } from "@mui/material";
+import { Button, Container, Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useContext } from "react";
+import { useHistory } from "react-router";
+import { CoursesContext } from "../../App";
+import CallToAction from "../CallToAction/CallToAction";
 import OtherHero from "../OtherHero/OtherHero";
+import TeamMember from "../TeamMember/TeamMember";
 
 const About = () => {
+  // handleClick
+  const history = useHistory();
+  const handleClick = () => {
+    history.push("/contact-us");
+  };
+  const courses = useContext(CoursesContext);
   return (
     <div>
       {/* hero section  */}
@@ -115,14 +125,45 @@ const About = () => {
           </Grid>
         </Box>
       </Container>
-      <Container sx={{ p: 6 }}>
-        <Box sx={{ textAlign: "center" }}>
-          <Typography sx={{ my: 1, fontSize: 30 }} variant="h5" component="h3">
-            MEET OUR TEAM
-          </Typography>
-        </Box>
-        <Box></Box>
+      {/* instructors  */}
+      <Container maxWidth="100%" sx={{ p: 6, bgcolor: "#edf6f9" }}>
+        <Container maxWidth="xl">
+          <Box sx={{ textAlign: "center" }}>
+            <Typography
+              sx={{ my: 1, fontSize: 30 }}
+              variant="h5"
+              component="h3"
+            >
+              MEET OUR INSTRUCTORS
+            </Typography>
+            <Box sx={{ width: "100%", my: 6 }}>
+              <Grid
+                container
+                spacing={{ xs: 2, md: 4 }}
+                columns={{ xs: 2, sm: 8, md: 12 }}
+              >
+                {courses.map((course) => (
+                  <Grid item xs={2} sm={4} md={4}>
+                    <TeamMember key={course.id} course={course}></TeamMember>
+                  </Grid>
+                ))}
+              </Grid>
+            </Box>
+          </Box>
+          <Box></Box>
+        </Container>
       </Container>
+      {/* call to action  */}
+      <CallToAction>
+        {" "}
+        <Button
+          onClick={handleClick}
+          className="contained-btn"
+          variant="contained"
+        >
+          Contact Us
+        </Button>
+      </CallToAction>
     </div>
   );
 };
