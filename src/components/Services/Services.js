@@ -26,11 +26,11 @@ const Services = () => {
         <Box sx={{ width: "100%" }}>
           <Grid
             container
-            spacing={{ xs: 2, md: 4 }}
-            columns={{ xs: 2, sm: 4, md: 12 }}
+            spacing={{ xs: 2, md: 2, lg: 4 }}
+            columns={{ xs: 2, sm: 4, md: 12, lg: 12 }}
           >
             {courses.map((course) => (
-              <Grid item xs={2} sm={4} md={4}>
+              <Grid item xs={2} sm={4} md={4} lg={4}>
                 <Course key={course.id} course={course}></Course>
               </Grid>
             ))}

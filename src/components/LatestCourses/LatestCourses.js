@@ -23,11 +23,11 @@ const LatestCourses = () => {
         <Box sx={{ width: "100%" }}>
           <Grid
             container
-            spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 2, sm: 4, md: 12 }}
+            spacing={{ xs: 2, md: 3, lg: 4 }}
+            columns={{ xs: 2, sm: 4, md: 12, lg: 12, xl: 12 }}
           >
             {courses.slice(0, 4).map((course) => (
-              <Grid item xs={2} sm={4} md={3}>
+              <Grid item xs={2} sm={4} md={6} lg={4} xl={3}>
                 <Course key={course.id} course={course}></Course>
               </Grid>
             ))}

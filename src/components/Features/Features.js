@@ -23,8 +23,8 @@ const Features = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
-          spacing={{ xs: 2, md: 4 }}
-          columns={{ xs: 2, sm: 4, md: 12 }}
+          spacing={{ xs: 2, md: 4, lg: 4 }}
+          columns={{ xs: 2, sm: 4, md: 12, lg: 12 }}
         >
           {
             <Grid
@@ -32,6 +32,7 @@ const Features = () => {
               xs={2}
               sm={4}
               md={4}
+              lg={4}
               className="animate__animated animate__fadeInLeft"
             >
               <Card sx={{ maxWidth: 400 }}>
