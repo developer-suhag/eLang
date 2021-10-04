@@ -7,7 +7,6 @@ import "./LatestCourses.css";
 
 const LatestCourses = () => {
   const courses = useContext(CoursesContext);
-  console.log(courses);
   return (
     <Container maxWidth="100%" sx={{ py: 8, bgcolor: "#edf6f9" }}>
       <Container maxWidth="xl">

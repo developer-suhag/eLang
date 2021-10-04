@@ -39,10 +39,7 @@ const Course = (props) => {
   };
 
   return (
-    <Card
-      sx={{ minWidth: 345, maxWidth: 500, minHeight: 465, boxShadow: 2 }}
-      className="animate__animated animate__slideInUp animate__delay-1s"
-    >
+    <Card sx={{ minWidth: 345, maxWidth: 500, minHeight: 465, boxShadow: 2 }}>
       <CardActionArea>
         <CardMedia
           className="course-thumb"
