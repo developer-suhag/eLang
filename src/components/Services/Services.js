@@ -17,6 +17,7 @@ const Services = () => {
   };
   return (
     <div>
+      {/* hero section  */}
       <OtherHero>ALL COURSES</OtherHero>
       {/* course  */}
       <Container sx={{ p: 8 }}>
