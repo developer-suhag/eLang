@@ -13,6 +13,8 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Services from "./components/Services/Services";
+// animate css
+import "animate.css";
 
 function App() {
   return (
