@@ -16,7 +16,7 @@ li {
 }
 /* font family  */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 h1,
 h2,
@@ -25,7 +25,7 @@ h4,
 h5,
 h6,
 a {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif !important;
   font-weight: 500;
 }
 
@@ -36,5 +36,5 @@ a {
 
 /* colored-text */
 .colored-text {
-  color: #ffd166 !important;
+  color: #ffb703 !important;
 }
