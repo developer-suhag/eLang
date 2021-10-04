@@ -5,7 +5,7 @@ import "./Heder.css";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light nav-menu fixed-top shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-light nav-menu sticky-top shadow-sm">
       <div className="container">
         <NavLink
           className="navbar-brand d-flex align-items-center gap-2"
