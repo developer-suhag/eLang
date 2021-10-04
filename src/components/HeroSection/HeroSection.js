@@ -10,6 +10,9 @@ const HeroSection = () => {
   const handleClick = () => {
     history.push("/services");
   };
+  const handle2ndClick = () => {
+    history.push("/contact-us");
+  };
   return (
     <section className="hero-section">
       <Container sx={{ p: 8, paddingBottom: 0 }}>
@@ -18,15 +21,15 @@ const HeroSection = () => {
         </h3>
         <Button
           onClick={handleClick}
-          sx={{ marginTop: 4, marginLeft: 4 }}
-          className="hero-btn animate__animated animate__backInLeft animate__delay-1s"
+          sx={{ marginTop: 8, marginLeft: 4 }}
+          className="hero-btn animate__animated animate__backInLeft"
           variant="outlined"
         >
           Start Course
         </Button>
         <Button
-          onClick={handleClick}
-          sx={{ marginTop: 4, marginLeft: 4 }}
+          onClick={handle2ndClick}
+          sx={{ marginTop: 8, marginLeft: 4 }}
           className="contained-btn animate__animated animate__backInRight animate__delay-1s"
           variant="contained "
         >

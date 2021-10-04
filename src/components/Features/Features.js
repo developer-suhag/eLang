@@ -1,72 +1,124 @@
-import { Card, Container, Grid } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardActionArea,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
+import languageTest from "../../images/language-tests.jpg";
+import BusinessEnglish from "../../images/bussiness-english.jpg";
+import juniorProgram from "../../images/junior-program.jpg";
+import { Link } from "react-router-dom";
+
 const Features = () => {
   return (
-    <Container sx={{ py: 8, bgcolor: "primary.main" }}>
-      <h3>Feautes</h3>
-      <Box sx={{ flexGrow: 1, marginTop: 12 }}>
+    <Container sx={{ py: 8 }}>
+      <Box sx={{ flexGrow: 1 }}>
         <Grid
           container
-          spacing={{ xs: 0, md: 0 }}
+          spacing={{ xs: 2, md: 4 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           {
             <Grid item xs={2} sm={4} md={4}>
-              <Card
-                sx={{
-                  height: 200,
-                  bgcolor: "#febf28",
-                  display: "flex",
-                  gap: 0,
-                  borderRadius: 0,
-                  alignItems: "center",
-                  p: 6,
-                }}
-              >
-                <h3 className="number">10</h3>
-
-                <h3 className="number-text">GLOBAL LOCATIONS</h3>
+              <Card sx={{ maxWidth: 400 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="300"
+                    image={languageTest}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Language Tests
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Generally, five types of language tests are given to
+                      language reamers in order to make decisions: placement
+                      tests, diagnostic tests, achievement tests, proficiency
+                      tests and aptitude tests.
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{ py: 2 }}>
+                    <Link to="/services">
+                      <Button variant="outlined" size="small" color="error">
+                        Learn More
+                      </Button>
+                    </Link>
+                  </CardActions>
+                </CardActionArea>
               </Card>
             </Grid>
           }
           {
             <Grid item xs={2} sm={4} md={4}>
-              <Card
-                sx={{
-                  height: 200,
-                  bgcolor: "#ffb605",
-                  display: "flex",
-                  gap: 0,
-                  borderRadius: 0,
-                  alignItems: "center",
-                  p: 6,
-                }}
-              >
-                <h3 className="number">94</h3>
-
-                <h3 className="number-text">PROGRAMS & COURSES</h3>
+              <Card sx={{ maxWidth: 400 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="300"
+                    image={BusinessEnglish}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Business English Programs
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      This Specialization is designed to teach you to
+                      communicate effectively in English in professional
+                      contexts. You will expand your English vocabulary, improve
+                      your ability to write and speak in English...
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{ py: 2 }}>
+                    <Link to="/services">
+                      <Button variant="outlined" size="small" color="error">
+                        Learn More
+                      </Button>
+                    </Link>
+                  </CardActions>
+                </CardActionArea>
               </Card>
             </Grid>
           }
           {
             <Grid item xs={2} sm={4} md={4}>
-              <Card
-                sx={{
-                  height: 200,
-                  bgcolor: "#f0aa03",
-                  display: "flex",
-                  gap: 0,
-                  borderRadius: 0,
-
-                  alignItems: "center",
-                  p: 6,
-                }}
-              >
-                <h3 className="number">14</h3>
-
-                <h3 className="number-text">YEARS OF EXPERIENCE</h3>
+              <Card sx={{ maxWidth: 400 }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="300"
+                    image={juniorProgram}
+                    alt="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Junior Programs
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Junior Achievement is the world's largest organization
+                      dedicated to educating students in grades K-12 about
+                      entrepreneurship, work readiness and financial literacy
+                      through...
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{ py: 2 }}>
+                    <Link to="/services">
+                      <Button variant="outlined" size="small" color="error">
+                        Learn More
+                      </Button>
+                    </Link>
+                  </CardActions>
+                </CardActionArea>
               </Card>
             </Grid>
           }
