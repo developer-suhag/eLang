@@ -28,7 +28,7 @@ const LatestCourses = () => {
           >
             {courses.slice(0, 4).map((course) => (
               <Grid item xs={2} sm={4} md={3}>
-                <Course course={course}></Course>
+                <Course key={course.id} course={course}></Course>
               </Grid>
             ))}
           </Grid>

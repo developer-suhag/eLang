@@ -1,0 +1,27 @@
+/* course  */
+.course-thumb {
+  position: relative;
+}
+.instructor-img {
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.course-icon {
+  color: #a8dadc;
+}
+.icon-text {
+  color: #1d3557;
+  font-size: 18px;
+}
+.price {
+  color: #e63946;
+  font-family: "Playfair Display", serif !important;
+  font-size: 20px;
+  font-weight: 700;
+}
