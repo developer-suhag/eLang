@@ -26,58 +26,7 @@ const ContactInfo = () => {
         Welcome to our Website. We are glad to have you around.
       </Typography>
       {/* Contact Detials  */}
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          my: 3,
-          py: 2,
-          borderTop: "1px solid #ddd",
-        }}
-      >
-        <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-          <Box>
-            <span>
-              <PhoneIcon sx={{ fontSize: 40, color: "#ffb703" }} />
-            </span>
-          </Box>
-          <Box>
-            <Typography variant="h6" component="h6">
-              Phone
-            </Typography>
-            <Typography
-              ariant="body1"
-              color="text.primary"
-              component="p"
-              variant="p"
-            >
-              +880 1791490304
-            </Typography>
-          </Box>
-        </Box>
-        <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-          <Box>
-            <span>
-              <EmailIcon sx={{ fontSize: 40, color: "#ffb703" }} />
-            </span>
-          </Box>
-          <Box>
-            <Typography variant="h6" component="h6">
-              Email
-            </Typography>
-            <Typography
-              ariant="body1"
-              color="text.primary"
-              component="p"
-              variant="p"
-            >
-              developersuhag@gmail.com
-            </Typography>
-          </Box>
-        </Box>
-      </Box>
-      {/* contact details  */}
-
+      {/* phone  */}
       <Box
         sx={{
           display: "flex",
@@ -87,6 +36,69 @@ const ContactInfo = () => {
           py: 2,
           borderTop: "1px solid #ddd",
         }}
+        className="animate__animated animate__slideInLeft"
+      >
+        <Box>
+          <span>
+            <PhoneIcon sx={{ fontSize: 40, color: "#ffb703" }} />
+          </span>
+        </Box>
+        <Box>
+          <Typography variant="h6" component="h6">
+            Phone
+          </Typography>
+          <Typography
+            ariant="body1"
+            color="text.primary"
+            component="p"
+            variant="p"
+          >
+            +880 1791490304
+          </Typography>
+        </Box>
+      </Box>
+      {/* email  */}
+      <Box
+        sx={{
+          display: "flex",
+          gap: 2,
+          alignItems: "center",
+          my: 3,
+          py: 2,
+          borderTop: "1px solid #ddd",
+        }}
+        className="animate__animated animate__slideInLeft animate__delay-1s"
+      >
+        <Box>
+          <span>
+            <EmailIcon sx={{ fontSize: 40, color: "#ffb703" }} />
+          </span>
+        </Box>
+        <Box>
+          <Typography variant="h6" component="h6">
+            Email
+          </Typography>
+          <Typography
+            ariant="body1"
+            color="text.primary"
+            component="p"
+            variant="p"
+          >
+            developersuhag@gmail.com
+          </Typography>
+        </Box>
+      </Box>
+      {/* address  */}
+      <Box
+        sx={{
+          display: "flex",
+          gap: 2,
+          alignItems: "center",
+          my: 3,
+          py: 2,
+          borderTop: "1px solid #ddd",
+        }}
+        className="animate__animated animate__slideInLeft animate__delay-2s"
       >
         <Box>
           <span>
@@ -108,7 +120,7 @@ const ContactInfo = () => {
         </Box>
       </Box>
       {/* socails icons  */}
-      <div className="social-icons">
+      <div className="social-icons animate__animated animate__fadeInUpBig animate__delay-2s">
         <a
           href="https://www.facebook.com/suhag.alamin.315/"
           target="_blank"

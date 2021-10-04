@@ -40,7 +40,7 @@ const HeroSection = () => {
           <Grid
             container
             spacing={{ xs: 0, md: 0 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}
+            columns={{ xs: 2, sm: 4, md: 12 }}
             className="animate__animated animate__slideInUp"
           >
             {

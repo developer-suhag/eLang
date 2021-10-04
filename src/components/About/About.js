@@ -35,11 +35,14 @@ const About = () => {
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}
+            columns={{ xs: 2, sm: 8, md: 12 }}
           >
             {
               <Grid item xs={2} sm={4} md={3}>
-                <Paper sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}>
+                <Paper
+                  sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}
+                  className="animate__animated animate__slideInLeft"
+                >
                   <Typography
                     sx={{ fontSize: 24, marginBottom: 2, color: "#e63946" }}
                     variant="h6"
@@ -61,7 +64,10 @@ const About = () => {
             }
             {
               <Grid item xs={2} sm={4} md={3}>
-                <Paper sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}>
+                <Paper
+                  sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}
+                  className="animate__animated animate__slideInDown"
+                >
                   <Typography
                     sx={{ fontSize: 24, marginBottom: 2, color: "#e63946" }}
                     variant="h6"
@@ -83,7 +89,10 @@ const About = () => {
             }
             {
               <Grid item xs={2} sm={4} md={3}>
-                <Paper sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}>
+                <Paper
+                  sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}
+                  className="animate__animated animate__slideInUp"
+                >
                   <Typography
                     sx={{ fontSize: 24, marginBottom: 2, color: "#e63946" }}
                     variant="h6"
@@ -105,7 +114,10 @@ const About = () => {
             }
             {
               <Grid item xs={2} sm={4} md={3}>
-                <Paper sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}>
+                <Paper
+                  sx={{ textAlign: "center", p: 4, bgcolor: "#feeafa" }}
+                  className="animate__animated animate__slideInRight"
+                >
                   <Typography
                     sx={{ fontSize: 24, marginBottom: 2, color: "#e63946" }}
                     variant="h6"
@@ -143,10 +155,16 @@ const About = () => {
               <Grid
                 container
                 spacing={{ xs: 2, md: 4 }}
-                columns={{ xs: 2, sm: 8, md: 12 }}
+                columns={{ xs: 2, sm: 4, md: 12 }}
               >
                 {courses.map((course) => (
-                  <Grid item xs={2} sm={4} md={4}>
+                  <Grid
+                    item
+                    xs={2}
+                    sm={4}
+                    md={4}
+                    className="animate__animated animate__fadeInUp"
+                  >
                     <TeamMember key={course.id} course={course}></TeamMember>
                   </Grid>
                 ))}

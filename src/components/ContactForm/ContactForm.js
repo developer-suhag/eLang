@@ -18,7 +18,7 @@ const ContactForm = () => {
       >
         Your email address will not be published.
       </Typography>
-      <Box sx={{ my: 3 }}>
+      <Box sx={{ my: 3 }} className="animate__animated animate__slideInRight">
         <form>
           <TextField
             required

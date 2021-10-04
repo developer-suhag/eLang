@@ -10,7 +10,13 @@ const CallToAction = (props) => {
       sx={{ py: 8, my: 4, bgcolor: "#a8dadc", borderRadius: 2, boxShadow: 2 }}
       className="call-to-action"
     >
-      <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+      <Box
+        sx={{
+          display: "grid",
+          alignItems: "center",
+          gridTemplateColumns: "1fr 1fr",
+        }}
+      >
         <div>
           <Typography variant="h5" component="h4">
             NEW STUDENTS JOIN EVERY WEEK
