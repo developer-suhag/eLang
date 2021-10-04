@@ -22,7 +22,7 @@ const HeroSection = () => {
         <Button
           onClick={handleClick}
           sx={{ marginTop: 8, marginLeft: 4 }}
-          className="hero-btn animate__animated animate__backInLeft"
+          className="outlined-btn animate__animated animate__backInLeft"
           variant="outlined"
         >
           Start Course

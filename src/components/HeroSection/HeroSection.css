@@ -22,11 +22,11 @@
   font-weight: 700;
 }
 
-.hero-btn {
+.outlined-btn {
   border-color: #f1faee !important;
   color: #f1faee !important;
 }
-.hero-btn:hover {
+.outlined-btn:hover {
   background: #ffd166 !important;
   color: #03071e !important;
   border-color: #ffd166 !important;

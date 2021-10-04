@@ -7,14 +7,19 @@ import {
   CardActions,
   CardContent,
   CardMedia,
+  Rating,
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 import "./Course.css";
 
 const Course = (props) => {
+  const history = useHistory();
   const {
+    id,
     title,
     instructorName,
     instructorImg,
@@ -24,8 +29,15 @@ const Course = (props) => {
     courseThumb,
     rating,
   } = props.course;
+
+  //   handleClick
+
+  const handleClick = () => {
+    history.push(`/course/${id}`);
+  };
+
   return (
-    <Card sx={{ maxWidth: 345, minHeight: 460, boxShadow: 2 }}>
+    <Card sx={{ minWidth: 345, maxWidth: 500, minHeight: 465, boxShadow: 2 }}>
       <CardActionArea>
         <CardMedia
           className="course-thumb"
@@ -49,8 +61,12 @@ const Course = (props) => {
             component="h3"
             color="text.primary"
           >
-            {title}
+            {title.slice(0, 20)}...
           </Typography>
+          <div>
+            <Typography component="legend">Read only</Typography>
+            <Rating name="read-only" value={rating} readOnly />
+          </div>
           <Box
             sx={{
               display: "grid",
@@ -79,9 +95,15 @@ const Course = (props) => {
           </Box>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
+      <CardActions sx={{ display: "block", textAlign: "center", py: 2 }}>
+        <Button
+          onClick={handleClick}
+          size="smalllarge"
+          variant="outlined"
+          color="secondary"
+          sx={{ color: "#1d3557", px: 4 }}
+        >
+          View More
         </Button>
       </CardActions>
     </Card>
