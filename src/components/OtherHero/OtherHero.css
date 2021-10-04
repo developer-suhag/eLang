@@ -1,0 +1,18 @@
+.other-hero-section {
+  background: linear-gradient(
+      90deg,
+      rgba(1, 22, 39, 1) 0%,
+      rgba(1, 22, 39, 0.49653364763874297) 90%
+    ),
+    url(../../images/other-hero-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 60px 0; */
+  color: #fff;
+  text-align: center;
+}
+.other-hero-section .hero-title {
+  width: 100%;
+  font-size: 48px;
+}

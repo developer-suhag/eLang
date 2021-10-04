@@ -1,14 +1,9 @@
 import { Button, Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { useHistory } from "react-router";
 import "./CallToAction.css";
 
-const CallToAction = () => {
-  const history = useHistory();
-  const handleClick = () => {
-    history.push("/courses");
-  };
+const CallToAction = (props) => {
   return (
     <Container
       sx={{ py: 8, my: 4, bgcolor: "#a8dadc", borderRadius: 2, boxShadow: 2 }}
@@ -20,15 +15,7 @@ const CallToAction = () => {
             NEW STUDENTS JOIN EVERY WEEK
           </Typography>
         </div>
-        <div style={{ textAlign: "right" }}>
-          <Button
-            onClick={handleClick}
-            variant="contained"
-            className="contained-btn"
-          >
-            Enroll Now
-          </Button>
-        </div>
+        <div style={{ textAlign: "right" }}>{props.children}</div>
       </Box>
     </Container>
   );

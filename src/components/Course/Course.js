@@ -13,7 +13,6 @@ import {
 import { Box } from "@mui/system";
 import React from "react";
 import { useHistory } from "react-router";
-import { Link } from "react-router-dom";
 import "./Course.css";
 
 const Course = (props) => {
