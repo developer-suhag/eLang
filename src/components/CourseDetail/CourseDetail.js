@@ -17,10 +17,12 @@ import OtherHero from "../OtherHero/OtherHero";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import PeopleIcon from "@mui/icons-material/People";
 import "./CourseDetails.css";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 // course detail component
 
 const CourseDetail = () => {
+  const history = useHistory();
   const { courseId } = useParams();
   parseInt(courseId);
   const courses = useContext(CoursesContext);
@@ -30,6 +32,10 @@ const CourseDetail = () => {
       newCourse.push(course);
     }
   }
+  // handleClick
+  const handleClick = () => {
+    history.push("/order-placed");
+  };
 
   return (
     <div>
@@ -115,13 +121,14 @@ const CourseDetail = () => {
           </CardActionArea>
           <CardActions sx={{ display: "block", textAlign: "center", py: 2 }}>
             <Button
+              onClick={handleClick}
               size="smalllarge"
               variant="contained"
               color="secondary"
               className="contained-btn"
               sx={{ px: 4 }}
             >
-              Add to Cart
+              Buy Now
             </Button>
           </CardActions>
         </Card>

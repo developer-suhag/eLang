@@ -11,7 +11,7 @@ const PageNotFound = () => {
     history.push("/home");
   };
   return (
-    <Container sx={{ textAlign: "center" }}>
+    <Container sx={{ textAlign: "center", p: 4 }}>
       <img src={errorImg} alt="" />
       <div>
         <Button

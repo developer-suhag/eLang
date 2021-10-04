@@ -15,6 +15,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
+import PlacedOrder from "./components/PlacedOrder/PlacedOrder";
 import Services from "./components/Services/Services";
 
 export const CoursesContext = createContext([]);
@@ -52,6 +53,9 @@ function App() {
             </Route>
             <Route exact path="/contact-us">
               <Contact></Contact>
+            </Route>
+            <Route path="/order-placed">
+              <PlacedOrder></PlacedOrder>
             </Route>
             <Route path="*">
               <PageNotFound></PageNotFound>
