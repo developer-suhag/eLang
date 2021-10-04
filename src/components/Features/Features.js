@@ -11,11 +11,10 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-
-import languageTest from "../../images/language-tests.jpg";
+import { Link } from "react-router-dom";
 import BusinessEnglish from "../../images/bussiness-english.jpg";
 import juniorProgram from "../../images/junior-program.jpg";
-import { Link } from "react-router-dom";
+import languageTest from "../../images/language-tests.jpg";
 
 const Features = () => {
   return (
@@ -48,7 +47,7 @@ const Features = () => {
                     </Typography>
                   </CardContent>
                   <CardActions sx={{ py: 2 }}>
-                    <Link to="/services">
+                    <Link to="/courses">
                       <Button variant="outlined" size="small" color="error">
                         Learn More
                       </Button>
@@ -80,7 +79,7 @@ const Features = () => {
                     </Typography>
                   </CardContent>
                   <CardActions sx={{ py: 2 }}>
-                    <Link to="/services">
+                    <Link to="/courses">
                       <Button variant="outlined" size="small" color="error">
                         Learn More
                       </Button>
@@ -112,7 +111,7 @@ const Features = () => {
                     </Typography>
                   </CardContent>
                   <CardActions sx={{ py: 2 }}>
-                    <Link to="/services">
+                    <Link to="/courses">
                       <Button variant="outlined" size="small" color="error">
                         Learn More
                       </Button>

@@ -1,4 +1,5 @@
 import React from "react";
+import CallToAction from "../CallToAction/CallToAction";
 
 import Features from "../Features/Features";
 import HeroSection from "../HeroSection/HeroSection";
@@ -14,6 +15,8 @@ const Home = () => {
       <Features></Features>
       {/* latest courses  */}
       <LatestCourses></LatestCourses>
+      {/* Call to action  */}
+      <CallToAction></CallToAction>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const HeroSection = () => {
   // handleClick
   const history = useHistory();
   const handleClick = () => {
-    history.push("/services");
+    history.push("/courses");
   };
   const handle2ndClick = () => {
     history.push("/contact-us");

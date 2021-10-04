@@ -41,7 +41,7 @@ const Header = () => {
               <NavLink
                 activeClassName="selected"
                 className="nav-link menu-item"
-                to="/services"
+                to="/courses"
               >
                 Services
               </NavLink>

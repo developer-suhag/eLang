@@ -64,8 +64,7 @@ const Course = (props) => {
             {title.slice(0, 20)}...
           </Typography>
           <div>
-            <Typography component="legend">Read only</Typography>
-            <Rating name="read-only" value={rating} readOnly />
+            <Rating precision={0.5} value={rating} readOnly />
           </div>
           <Box
             sx={{
