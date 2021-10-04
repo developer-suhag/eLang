@@ -6,6 +6,7 @@ import { Container, Grid } from "@mui/material";
 import React from "react";
 import "./Footer.css";
 
+// footer component
 const Footer = () => {
   return (
     <div className="footer">

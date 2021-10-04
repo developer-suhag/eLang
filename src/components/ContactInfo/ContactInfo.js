@@ -1,15 +1,16 @@
 import EmailIcon from "@mui/icons-material/Email";
-import PhoneIcon from "@mui/icons-material/Phone";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import PhoneIcon from "@mui/icons-material/Phone";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import "./ContactInfo.css";
 
+// contact info component
 const ContactInfo = () => {
   return (
     <Box className="contact-info">

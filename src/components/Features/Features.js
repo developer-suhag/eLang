@@ -16,6 +16,7 @@ import BusinessEnglish from "../../images/bussiness-english.jpg";
 import juniorProgram from "../../images/junior-program.jpg";
 import languageTest from "../../images/language-tests.jpg";
 
+// feature component
 const Features = () => {
   return (
     <Container sx={{ py: 8 }}>

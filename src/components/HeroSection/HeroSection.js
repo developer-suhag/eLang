@@ -4,6 +4,7 @@ import React from "react";
 import { useHistory } from "react-router";
 import "./HeroSection.css";
 
+// hero section component
 const HeroSection = () => {
   // handleClick
   const history = useHistory();

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
 import "./Heder.css";
 
+// header component
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light nav-menu sticky-top shadow-sm">

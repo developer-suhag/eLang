@@ -15,6 +15,8 @@ import React from "react";
 import { useHistory } from "react-router";
 import "./Course.css";
 
+// course component
+
 const Course = (props) => {
   const history = useHistory();
   const {
@@ -41,6 +43,7 @@ const Course = (props) => {
   return (
     <Card sx={{ minWidth: 345, maxWidth: 500, minHeight: 465, boxShadow: 2 }}>
       <CardActionArea>
+        {/* course banner  */}
         <CardMedia
           className="course-thumb"
           component="img"
@@ -48,15 +51,18 @@ const Course = (props) => {
           image={courseThumb}
           alt={title}
         />
+        {/* instructor image  */}
         <CardContent sx={{ textAlign: "center" }}>
           <img
             className="instructor-img"
             src={instructorImg}
             alt={instructorName}
           />
+          {/* instructor name  */}
           <Typography sx={{ my: 2 }} gutterBottom variant="span" component="p">
             {instructorName}
           </Typography>
+          {/* course title  */}
           <Typography
             sx={{ my: 2 }}
             variant="h6"
@@ -65,6 +71,7 @@ const Course = (props) => {
           >
             {title.slice(0, 20)}...
           </Typography>
+          {/* dynamic rating  */}
           <div>
             <Rating precision={0.5} value={rating} readOnly />
           </div>

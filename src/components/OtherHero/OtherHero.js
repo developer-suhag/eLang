@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import "./OtherHero.css";
 
+// hero section component for other page except home
 const OtherHero = (props) => {
   return (
     <section className="other-hero-section">

@@ -3,6 +3,8 @@ import React from "react";
 import { useHistory } from "react-router";
 import errorImg from "../../images/404 Error.gif";
 
+// page not found page
+
 const PageNotFound = () => {
   const history = useHistory();
   const handleClick = () => {

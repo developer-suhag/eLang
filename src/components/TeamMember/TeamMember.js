@@ -5,6 +5,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Typography } from "@mui/material";
 
+// team member component
 const TeamMember = (props) => {
   const { instructorName, instructorImg } = props.course;
   return (

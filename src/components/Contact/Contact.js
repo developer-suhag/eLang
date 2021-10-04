@@ -5,6 +5,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import ContactInfo from "../ContactInfo/ContactInfo";
 import OtherHero from "../OtherHero/OtherHero";
 
+// contact page
 const Contact = () => {
   return (
     <div>

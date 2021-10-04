@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import "./ContactFrom.css";
 
+// contact form component
 const ContactForm = () => {
   return (
     <Box sx={{}}>

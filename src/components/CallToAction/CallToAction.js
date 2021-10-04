@@ -1,8 +1,9 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import "./CallToAction.css";
 
+// call to action component
 const CallToAction = (props) => {
   return (
     <Container

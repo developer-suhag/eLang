@@ -5,6 +5,7 @@ import { CoursesContext } from "../../App";
 import Course from "../Course/Course";
 import "./LatestCourses.css";
 
+// latest course component
 const LatestCourses = () => {
   const courses = useContext(CoursesContext);
   return (

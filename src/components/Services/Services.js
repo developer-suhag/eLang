@@ -8,7 +8,9 @@ import Course from "../Course/Course";
 import OtherHero from "../OtherHero/OtherHero";
 import "./Services.css";
 
+// services page
 const Services = () => {
+  // get courses by context api
   const courses = useContext(CoursesContext);
   // handleClick
   const history = useHistory();

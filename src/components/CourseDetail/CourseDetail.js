@@ -18,6 +18,8 @@ import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import PeopleIcon from "@mui/icons-material/People";
 import "./CourseDetails.css";
 
+// course detail component
+
 const CourseDetail = () => {
   const { courseId } = useParams();
   parseInt(courseId);

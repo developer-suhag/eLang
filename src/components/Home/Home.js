@@ -2,11 +2,12 @@ import { Button } from "@mui/material";
 import React from "react";
 import { useHistory } from "react-router";
 import CallToAction from "../CallToAction/CallToAction";
-
 import Features from "../Features/Features";
 import HeroSection from "../HeroSection/HeroSection";
 import LatestCourses from "../LatestCourses/LatestCourses";
 import "./Home.css";
+
+// home page
 
 const Home = () => {
   // handleClick

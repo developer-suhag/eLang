@@ -7,17 +7,20 @@ import CallToAction from "../CallToAction/CallToAction";
 import OtherHero from "../OtherHero/OtherHero";
 import TeamMember from "../TeamMember/TeamMember";
 
+// about page
 const About = () => {
+  // get courses by context api
+  const courses = useContext(CoursesContext);
   // handleClick
   const history = useHistory();
   const handleClick = () => {
     history.push("/contact-us");
   };
-  const courses = useContext(CoursesContext);
   return (
     <div>
       {/* hero section  */}
       <OtherHero>ABOUT US</OtherHero>
+
       <Container sx={{ p: 6 }}>
         <Box sx={{ textAlign: "center" }}>
           <Typography sx={{ my: 1, fontSize: 30 }} variant="h5" component="h3">
