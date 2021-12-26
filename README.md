@@ -1,11 +1,23 @@
-## eLang - A Online language learning platfrom.
+# eLang - A Online language learning platfrom.
 
-<a href="https://online-language-school-by-suhag.netlify.app/">Visit Website</a>
+### Front End project
 
-## About this website
+Happy Hearts, Happy Families.
 
-<ul>
-    <li>Here you can learn different language from your home</li>
-    <li>We have specialist Instructor to help you.</li>
-    <li>We offer affordable courses</li>
-</ul>
+[Visit our website](https://online-language-school-by-suhag.netlify.app/)
+
+## Featured in -
+
+- eLang is a online language learning website
+- Users can learn more about the services
+- Users can learn different language from your home
+- Compatible with all devices
+- Improved performance by optimizing and resizing images
+
+## Technology Used -
+
+React.js, React Router, Materil UI, CSS.
+
+## Author
+
+- [Suhag Al Amin](https://github.com/developer-suhag)
