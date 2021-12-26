@@ -16,7 +16,7 @@ Happy Hearts, Happy Families.
 
 ## Technology Used -
 
-React.js, React Router, Materil UI, CSS.
+React.js, React Router, Materil UI, CSS, Font Awesome.
 
 ## Author
 
